@@ -1,6 +1,6 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js');
 
-const VERSION = 'lyrics.emiga.tech-v0.1.0';
+const VERSION = 'lyrics.emiga.tech-v0.0.2';
 const HTML_CACHE = "html";
 const JS_CACHE = "javascript";
 const STYLE_CACHE = "stylesheets";
