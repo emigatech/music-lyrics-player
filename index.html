@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="lib/style/bootstrap.css">
+	<!-- App CSS -->
+	<link rel="stylesheet" type="text/css" href="lib/style/app.css">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+<body>
+
+<main class="min-vh-100 min-vw-100 w-100 d-inline-block">
+	<div class="center align-middle">
+		<audio id="emigaplayer">
+			<!-- 5.42 MB -->
+			<source src="assets/music/year-zero.mp3" type="audio/mp3"> 
+			<!-- 2.80 MB -->
+			<source src="assets/music/year-zero.mp4" type="audio/mp4"> 
+		</audio> 
+		<!-- Lyrics -->
+		<div class="emiga w-auto p-1" data-media="#emigaplayer" data-view-mode="mini">
+			[00:00.00] ...
+		    [00:00.10] Belial, Behemoth, Beelzebub
+			[00:07.00] Asmodeus, Satanas, Lucifer
+			[00:16.00] ...
+			[00:31.00] Belial, Behemoth, Beelzebub
+			[00:39.00] Asmodeus, Satanas, Lucifer
+			[00:47.00] Since dawn of time the fate of man is that of lice
+			[00:55.00] Equal as parasites and moving without eyes
+			[01:03.00] A day of reckoning when penance is to burn
+			[01:11.00] Count down together now and say the words that you will learn
+			[01:19.00] Hail Satan, Archangelo
+			[01:27.00] Hail Satan, Welcome year zero
+			[01:34.60] Hail Satan, Archangelo
+			[01:42.00] Hail Satan, Welcome year zero
+			[01:52.00] Belial, Behemoth, Beelzebub
+			[01:59.00] Asmodeus, Satanas, Lucifer
+			[02:08.00] Crestfallen kings and queens comforting in their faith
+			[02:16.00] Unbeknownst to them is the presence of the wraith
+			[02:24.00] Since fate of man is equal to the fate of lice
+			[02:32.00] As new dawn rises you shalt recognize now behold the Lord of Flies
+			[02:40.00] Hail Satan, Archangelo
+			[02:48.00] Hail Satan, welcome year zero
+			[02:55.00] Hail Satan
+			[02:58.00] ...
+			[03:27.00] He will tremble the nations
+			[03:30.00] Kingdoms to fall one by one
+			[03:34.00] A victim to fall for temptations
+			[03:38.00] A daughter to fall for a son
+			[03:42.00] The ancient serpent deceiver
+			[03:46.00] To masses standing in awe
+			[03:50.00] He will ascend to the heavens
+			[03:54.00] Above the stars of God
+			[04:00.00] Hail Satan, Archangelo
+			[04:08.00] Hail Satan, welcome year zero
+			[04:16.00] Hail Satan, Archangelo
+			[04:24.00] Hail Satan, welcome year zero
+			[04:32.00] (end)
+		</div>	
+  	</div>
+
+  	<!-- Control Panel -->
+  	<div class="fixed-bottom w-100">
+  		<!-- Seconds -->
+  		<input disabled class="w-100 d-inline-block" id="emigaplayer_progress" type="range" min="0" max="" value="0"/>
+  		<!-- Control Group -->
+  		<div class="d-flex justify-content-between pb-2">
+  			<div class="mt-2">
+  				<!-- Replay -->
+			 	<button disabled class="btn-lg" id="emigaplayer_restart">
+					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-up-left"><polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path></svg>
+			 	</button> 
+  			</div>
+
+  			<div class="ml-5 pl-3">
+  				<!-- Play/Pause -->
+			 	<button disabled class="btn-lg" id="emigaplayer_play">
+					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+			 	</button> 
+  			</div>
+
+
+  			<div class="mt-2">
+		  		<div class="btn-group" role="group" aria-label="Volume Control Panel"> 
+				 	<!-- Volume Up -->
+					<button disabled class="btn-lg" id="emigaplayer_increaseVolume">
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+					</button>
+					<!-- Volume Down -->
+					<button disabled class="btn-lg" id="emigaplayer_decreaseVolume">
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+					</button> 
+		  		</div>
+  			</div>
+  		</div>
+	 </div>
+</main>
+
+
+<!-- Lyrics Sync -->
+<script type="text/javascript" src="lib/js/emiga-lyrics.js"></script>
+<!-- Jquery Slim -->
+<script type="text/javascript" src="lib/js/jquery-slim.js"></script>
+<!-- Popper JS -->
+<script type="text/javascript" src="lib/js/popper.js"></script>
+<!-- Bootstrap JS -->
+<script type="text/javascript" src="lib/js/bootstrap.js"></script>
+<!-- App JS -->
+<script type="text/javascript" src="lib/js/app.js"></script>
+</body>
+</html>
