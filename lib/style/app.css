@@ -29,6 +29,7 @@
 html,
 body {
 	background-color: rgba(0, 0, 0, 1);
+	font-family: 'Roboto', sans-serif;
 }
 
 html *:focus,
@@ -58,11 +59,15 @@ button {
 	border-style: none;
 }
 
+main {
+	display: none;
+}
+
 .emiga {
+	display: none;
 	position: relative;
 	overflow-x: hidden;
 	overflow-y: auto;
-	display: none;
 	font-family: 'Russo One', sans-serif !important;
 	font-size: 3rem;
 }
@@ -113,6 +118,7 @@ button {
 
 #emigaplayer_restart svg,
 #emigaplayer_decreaseVolume svg,
+#emigaplayer_end svg,
 #emigaplayer_increaseVolume svg {
 	height: 32px;
 	width: 32px;
@@ -206,4 +212,34 @@ input::-ms-fill-upper {
 }
 input::-ms-tooltip {
   display: none;
+}
+
+.poster {
+	max-width: 100%;
+	width: 320px;
+	height: auto;
+}
+.poster-details {
+	text-align: left;
+	color: rgba(255,255,255,1);
+}
+.nav-item a {
+	font-size: 1rem;
+	color: rgba(255,255,255,0.3);
+}
+.nav-item a:hover{
+	color: rgba(255,255,255,0.6);
+}
+.btn-dark {
+	background-color: rgba(0,0,0,1);
+	color: rgba(255,255,255,0.5);
+	border: 3px solid rgba(255,255,255,1);
+}
+.btn-dark:hover{
+	border: 3px solid rgba(255,255,255,1);
+}
+@media screen and (max-width:362px) {
+	.poster-play svg{
+		display: none;
+	}
 }
