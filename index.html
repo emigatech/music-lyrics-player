@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" version="v0.0.2" app="lyrics.emiga.tech">
+<html lang="en" version="v0.0.3" app="lyrics.emiga.tech">
 <head>
 
 	<!-- 
@@ -77,6 +77,17 @@
 
         gtag('config', 'G-BSDKWE5580');
     </script>
+    <script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "AudioObject",
+		  "contentUrl": "https://lyrics.emiga.tech/assets/music/year-zero.mp3",
+		  "description": "Ghost B.C - Year Zero",
+		  "duration": "T5M50S",
+		  "encodingFormat": "audio/mp3",
+		  "name": "year-zero.mp3"
+		}
+	</script>
 <body>
 <div id="loading" class="mt-5 text-center text-light">
 	<img style="filter:invert(1);" src="assets/emiga-logo.png" class="img-fluid" height="100px" width="100px" alt="emiga-logo" />
@@ -220,8 +231,8 @@
 
 
 <!--[if lt IE 9]>
-	<script type="text/javascript" src="lib/js/html5shiv.js"></script>
-	<script type="text/javascript" src="lib/js/respond.js"></script>  
+	<script type="text/javascript" src="/lib/js/html5shiv.js"></script>
+	<script type="text/javascript" src="/lib/js/respond.js"></script>  
 <![endif]-->
 <script type="text/javascript" src="lib/js/emiga-lyrics.js"></script>
 <script type="text/javascript" src="lib/js/jquery-slim.js"></script>
@@ -241,6 +252,18 @@
         .catch(function(err){
             console.log('ServiceWorker registration failed: ',err);
     })}
+
+    if('mediaSession' in navigator) {
+    	navigator.mediaSession.metadata = new MediaMetadata({
+		    title: 'Year Zero',
+		    artist: 'Ghost B.C',
+		    album: 'Infestissumam',
+		    artwork: [
+		      { src: 'https://lyrics.emiga.tech/assets/music/poster.jpg', sizes: '512x512', type: 'image/jpeg' },
+		      { src: 'https://lyrics.emiga.tech/assets/music/poster.webp', sizes: '512x512', type: 'image/webp' }
+		    ]
+		});
+    }
 </script>
 </body>
 </html>
