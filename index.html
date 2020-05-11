@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" version="v0.0.3" app="lyrics.emiga.tech">
+<html lang="en" version="v0.1.0" app="lyrics.emiga.tech">
 <head>
 
 	<!-- 
@@ -21,34 +21,36 @@
 	<meta charset="utf-8">
 	<title>Ghost B.C - Year Zero | Lyrics on lyrics.emiga.tech</title>
 	<meta name="description" content="Lyrics for Ghost B.C - Year Zero music online lyrics.emiga.tech application" />
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="user-scalable=NO, width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="theme-color" content="#000000" />
-    	<meta name="msapplication-TileColor" content="#000000" />
-	<link rel="stylesheet" type="text/css" href="lib/style/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="lib/style/app.css" />
-	<link rel="stylesheet" type="text/css" href="lib/style/noty.css" />
+    <meta name="msapplication-TileColor" content="#000000" />
+
+	<link rel="stylesheet" type="text/css" href="./lib/style/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="./lib/style/noty.css" />
+	<link rel="stylesheet" type="text/css" href="./lib/style/app.min.css" />
+
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 
 	<!-- SEO -->
-    <link rel="icon" href="assets/images/favicon.ico" />
-    <link rel="manifest" href="assets/manifest.json" />
-    <link rel="shortcut icon" href="assets/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" href="./assets/images/favicon.ico" />
+    <link rel="manifest" href="./assets/manifest.json" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
     <meta name="msapplication-TileImage" content="https://lyrics.emiga.tech/assets/images/ms-icon-144x144.png" />
     <meta name="msapplication-config" content="https://lyrics.emiga.tech/assets/images/browserconfig.xml" />
     <meta name="twitter:card" content="summary_large_image">
@@ -93,7 +95,7 @@
     </script>
 <body>
 <div id="loading" class="mt-5 text-center text-light">
-	<img style="filter:invert(1);" src="assets/emiga-logo.png" class="img-fluid" height="100px" width="100px" alt="emiga-logo" />
+	<img style="filter:invert(1);" src="./assets/emiga-logo.png" class="img-fluid" height="100px" width="100px" alt="emiga-logo" />
 	<div class="pt-2 pb-2 mt-5">
 		<div class="spinner-border text-light" role="status">
 			<span class="sr-only">Loading....</span>
@@ -105,9 +107,9 @@
 <main class="min-vh-100 min-vw-100 w-100 pt-5" id="emigaplayer_poster">
 	<div class="center align-middle pt-5">
 		<picture>
-			<source srcset="assets/music/poster.webp" type="image/webp">
-			<source srcset="assets/music/poster.jpg" type="image/jpeg">
-			<img class="poster img-fluid" src="assets/music/poster.webp" alt="Ghost B.C - Year Zero">
+			<source srcset="./assets/music/poster.webp" type="image/webp">
+			<source srcset="./assets/music/poster.jpg" type="image/jpeg">
+			<img class="poster img-fluid" src="./assets/music/poster.webp" alt="Ghost B.C - Year Zero">
 		</picture>
 		<div class="poster-details mt-3">
 			<h4>Year Zero</h4>
@@ -134,10 +136,8 @@
 <main class="min-vh-100 min-vw-100 w-100" id="emigaplayer_lyrics">
 	<div class="center align-middle">
 		<audio id="emigaplayer">
-			<!-- 5.42 MB -->
-			<source src="assets/music/year-zero.mp3" type="audio/mp3"> 
-			<!-- 2.80 MB -->
-			<source src="assets/music/year-zero.mp4" type="audio/mp4"> 
+			<source src="./assets/music/year-zero.mp4" type="audio/mp4"> 
+			<source src="./assets/music/year-zero.mp3" type="audio/mp3"> 
 		</audio> 
 		<!-- Lyrics -->
 		<div class="emiga w-auto p-1" data-media="#emigaplayer" data-view-mode="mini">
@@ -181,7 +181,7 @@
 		</div>	
   	</div>
   	<!-- Go to Poster Mode -->
-  	<div class="fixed-top w-100">
+  	<div class="fixed-top w-100 bg-dark">
   		<div class="d-flex justify-content-between pt-2">
   			<span class="btn-lg">
 				<span>Ghost B.C. &mdash; Year Zero</span>
@@ -192,7 +192,7 @@
   		</div>	
   	</div>	
   	<!-- Control Panel -->
-  	<div class="fixed-bottom w-100">
+  	<div class="fixed-bottom w-100 bg-dark">
   		<!-- Seconds -->
   		<input disabled class="w-100 d-inline-block" id="emigaplayer_progress" type="range" min="0" max="" value="0"/>
   		<!-- Control Group -->
@@ -234,17 +234,17 @@
 
 
 <!--[if lt IE 9]>
-	<script type="text/javascript" src="/lib/js/html5shiv.js"></script>
-	<script type="text/javascript" src="/lib/js/respond.js"></script>  
+	<script type="text/javascript" src="./lib/js/html5shiv.js"></script>
+	<script type="text/javascript" src="./lib/js/respond.js"></script>  
 <![endif]-->
-<script type="text/javascript" src="lib/js/emiga-lyrics.js"></script>
-<script type="text/javascript" src="lib/js/jquery-slim.js"></script>
-<script type="text/javascript" src="lib/js/popper.js"></script>
-<script type="text/javascript" src="lib/js/bootstrap.js"></script>
-<script type="text/javascript" src="lib/js/app.js"></script>
-<script type="text/javascript" src="lib/js/noty.js"></script>
+<script type="text/javascript" src="./lib/js/emiga-lyrics.js" defer></script>
+<script type="text/javascript" src="./lib/js/jquery-slim.js" defer></script>
+<script type="text/javascript" src="./lib/js/popper.js" defer></script>
+<script type="text/javascript" src="./lib/js/bootstrap.js" defer></script>
+<script type="text/javascript" src="./lib/js/noty.js" defer></script>
+<script type="text/javascript" src="./lib/js/app.min.js" defer></script>
 <!-- Service Worker -->
-<script type="text/javascript">
+<script type="text/javascript" defer>
     if('serviceWorker' in navigator){
        	navigator.serviceWorker.register('/sw.js',{
            	scope:'./'
